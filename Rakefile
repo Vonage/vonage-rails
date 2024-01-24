@@ -15,14 +15,25 @@ RDoc::Task.new(:rdoc) do |rdoc|
 end
 
 require 'bundler/gem_tasks'
-
+require 'rake/testtask'
 require 'rspec/core/rake_task'
-require 'coveralls/rake/task'
 
 RSpec::Core::RakeTask.new(:test)
 
-Coveralls::RakeTask.new
-
 task default: :test
 
-task :test_with_coveralls => [:test, 'coveralls:push']
+desc "Build gem"
+task :build_gem do
+  `rake build`
+end
+
+desc "Publish gem"
+task publish_gem: [:build_gem] do
+  `gem push pkg/*.gem`
+  Rake::Task[:empty_pkg].invoke
+end
+
+desc "Empty pkg directory"
+task :empty_pkg do
+  `rm -rf pkg/*`
+end
