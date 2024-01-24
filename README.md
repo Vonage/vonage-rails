@@ -16,8 +16,8 @@ need a Vonage account. Sign up [for free at vonage.com](https://dashboard.nexmo.
 
 Vonage Rails requires: 
 
-* Rails 5.2+
-* Ruby 2.5.3+
+* Rails 6.1.0+
+* Ruby 2.7.0+
 * To use the Vonage APIs, you [need an account](https://dashboard.nexmo.com/sign-up?utm_source=DEV_REL&utm_medium=github&utm_campaign=nexmo-rails)
 
 ## Installation
