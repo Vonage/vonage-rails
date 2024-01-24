@@ -1,3 +1,9 @@
+# 1.1.0
+
+* Migrating to Vonage [https://github.com/Vonage/vonage-rails](https://github.com/Vonage/vonage-rails) from [https://github.com/Nexmo/nexmo-rails](https://github.com/Nexmo/nexmo-rails)
+* Adding delegators for `messaging`, `number_insight_2`, `subaccounts`, `users`, `verify2`
+* Updating specs
+
 # 1.0.0
 
 * Renamed `calls` to `voice` in the delegators within the `Nexmo` module, in accordance with the v7.0.0 release of the Nexmo Ruby SDK, please see the [SDK changelog](https://github.com/Nexmo/nexmo-ruby/blob/master/CHANGES.md) for details.
