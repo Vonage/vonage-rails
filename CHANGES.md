@@ -1,3 +1,7 @@
+# 1.2.0
+
+* Minor implementation improvements. See PR [#5](https://github.com/Vonage/vonage-rails/pull/5) for details.
+
 # 1.1.0
 
 * Migrating to Vonage [https://github.com/Vonage/vonage-rails](https://github.com/Vonage/vonage-rails) from [https://github.com/Nexmo/nexmo-rails](https://github.com/Nexmo/nexmo-rails)
