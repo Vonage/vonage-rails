@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   spec.add_dependency('jwt', '~> 2')
-  spec.add_dependency('vonage', '~> 7.19.0')
+  spec.add_dependency('vonage', '~> 7.19')
   spec.add_dependency('dotenv-rails')
   spec.add_development_dependency('rspec')
   spec.add_development_dependency('rails')
