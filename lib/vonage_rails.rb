@@ -1,5 +1,6 @@
 require 'vonage'
 require 'forwardable'
+require 'ostruct'
 
 module Vonage
   class << self
@@ -7,11 +8,7 @@ module Vonage
 
     attr_accessor :client
 
-    def_delegators :@client, :account, :alerts, :applications, 
-                   :conversations, :conversions, :files, :messages, 
-                   :messaging, :numbers, :number_insight, :number_insight_2,
-                   :pricing, :redact, :secrets, :sms, :signature, :subaccounts,
-                   :tfa, :users, :verify, :verify2, :video, :voice
+    def_delegators :@client, *::Vonage::Client.instance_methods(false) - [:config]
                    
     def setup(&block)
       config = OpenStruct.new 
